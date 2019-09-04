@@ -1,0 +1,47 @@
+{
+  "name": "express-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=development webpack --config webpack.config.js",
+    "start:dev": "NODE_ENV=development webpack",
+    "run:dev": "NODE_ENV=development nodemon build/index.js --host 192.168.0.174",
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^15.1.0",
+    "@types/express": "^4.17.0",
+    "@types/hapi__joi": "^15.0.3",
+    "apollo-server": "^2.7.0",
+    "apollo-server-express": "^2.7.0",
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "graphql": "^14.4.2",
+    "graphql-subscriptions": "^1.1.0",
+    "http": "0.0.0",
+    "jpv": "^2.0.1",
+    "merge-graphql-schemas": "^1.6.1",
+    "mongoose": "^5.6.5"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.2.2",
+    "@types/jest": "^24.0.15",
+    "@types/mongoose": "^5.5.9",
+    "@types/node": "^12.6.6",
+    "easygraphql-tester": "^5.1.6",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6",
+    "webpack-node-externals": "^1.7.2",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}
